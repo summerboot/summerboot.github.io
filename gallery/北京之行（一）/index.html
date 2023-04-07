@@ -331,7 +331,10 @@
     <script>
         (function() {
             let pwd = 'aecfaac8d2bf4a2498dc169cf41e29f7bd93a7965798da5135418ed1a35a6e23';
-
+            let str1 = '[object Object]'
+            let str2 = '[object Object]'
+            console.log(str1)
+            console.log(str2)
             if (pwd && pwd.length > 0) {
                 if (pwd !== CryptoJS.SHA256(prompt('该相册已加密，请输入密码访问')).toString(CryptoJS.enc.Hex)) {
                     alert('密码错误，将返回主页！');
@@ -390,9 +393,9 @@
     </div>
 </div> -->
 
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="/libs/MyGallery/baguetteBox.css">
 <!-- 该主题自带的lightGallery.js在图片多的时候会很卡，所以弃用，使用了一个我在网上找的baguetteBox，很轻量级，就是功能少了点 -->
-<script src=""></script> 
+<script src="/libs/MyGallery/baguetteBox.js"></script> 
 <style>    
     .my-gallery .photo img {
         transition: all 0.6s ease-in-out; 
